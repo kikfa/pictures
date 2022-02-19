@@ -1,0 +1,87 @@
+object Form1: TForm1
+  Left = 99
+  Height = 301
+  Top = 55
+  Width = 488
+  Caption = 'Программа'
+  ClientHeight = 301
+  ClientWidth = 488
+  OnCreate = FormCreate
+  LCLVersion = '2.0.12.0'
+  object AnswerEdit: TEdit
+    Left = 48
+    Height = 22
+    Top = 256
+    Width = 361
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object CalcBtn: TButton
+    Left = 48
+    Height = 25
+    Top = 204
+    Width = 357
+    Caption = 'Посчитать'
+    OnClick = CalcBtnClick
+    TabOrder = 1
+  end
+  object TimeEdit: TEdit
+    Left = 24
+    Height = 22
+    Top = 24
+    Width = 104
+    OnChange = TimeEditChange
+    OnClick = TimeEditClick
+    OnKeyPress = EditKeyPress
+    TabOrder = 2
+    Text = 'Время'
+  end
+  object SpeedEdit: TEdit
+    Left = 168
+    Height = 22
+    Top = 24
+    Width = 136
+    OnChange = SpeedEditChange
+    OnKeyPress = EditKeyPress
+    TabOrder = 3
+    Text = 'скорость начальная'
+  end
+  object AccEdit: TEdit
+    Left = 352
+    Height = 22
+    Top = 24
+    Width = 120
+    OnChange = AccEditChange
+    OnKeyPress = EditKeyPress
+    TabOrder = 4
+    Text = 'ускорение'
+  end
+  object RadioButton1: TRadioButton
+    Left = 24
+    Height = 18
+    Top = 72
+    Width = 42
+    Caption = 'мс'
+    Checked = True
+    OnChange = RadioButton1Change
+    TabOrder = 7
+    TabStop = True
+  end
+  object RadioButton2: TRadioButton
+    Left = 24
+    Height = 18
+    Top = 104
+    Width = 33
+    Caption = 'с'
+    OnChange = RadioButton2Change
+    TabOrder = 5
+  end
+  object CheckBox1: TCheckBox
+    Left = 336
+    Height = 18
+    Top = 72
+    Width = 142
+    Caption = 'Торможение 5 м/c2'
+    TabOrder = 6
+  end
+end
